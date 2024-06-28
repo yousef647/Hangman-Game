@@ -1,0 +1,36 @@
+/* .container{
+    width: fit-content;
+}
+
+.row{
+    flex-direction: column;
+} */
+
+@media(max-width:992px){
+    .container{
+        width: fit-content;
+        display: grid;
+        grid-template-areas:
+        "item2"
+        "item1"
+        "item3";
+    }
+    
+    .row{
+        flex-direction: column;
+        /* order: 1; */
+
+    }
+    .letter-guess{
+        /* display: flex; */
+        /* order: 2; */
+        /* grid-area: 0; */
+    }
+    .hangman-draw{
+        /* order: -1; */
+        grid-area: 1;
+    }
+    .letters{
+        grid-area: 2;
+    }
+}
